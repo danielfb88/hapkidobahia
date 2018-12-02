@@ -1,0 +1,13 @@
+version: '3'
+networks:
+  web:
+services:
+  frontend:
+    image: nginx:1.13
+    container_name: nginx
+    volumes:
+      - ../dist:/usr/share/nginx/html/
+    ports:
+      - 80:80
+    networks:
+      - web
