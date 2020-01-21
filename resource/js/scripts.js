@@ -17,6 +17,13 @@ $( document ).ready(function() {
 	});
 	/************* Desabilita o botão direito do mouse **************/
 	
+	// POPUP noticia
+	var close = document.getElementById('close');
+	var popup = document.getElementById('popup');
+
+	close.addEventListener("click", function() {
+		popup.style.display = 'none';
+	});
 });
 
 /************* Google Analytics **************/
